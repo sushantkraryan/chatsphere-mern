@@ -9,7 +9,7 @@ export function createSocket() {
 
   // "auth" here is sent once during the initial WebSocket handshake —
   // this is what our backend's io.use() middleware reads and verifies.
-  return io("http://localhost:5000", {
+  return io("https://chatsphere-mern.onrender.com", {
     auth: { token },
   });
 }
