@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://taskflow-mern-f8mm.onrender.com",
+  baseURL: "https://chatsphere-mern.onrender.com/api",
 });
 
 api.interceptors.request.use((config) => {

@@ -10,12 +10,7 @@ const roomRoutes = require("./routes/roomRoutes");
 const initSocket = require("./socket/socketHandler");
 
 const app = express();
-app.use(cors({
-  origin: 'https://chatsphere-mern.vercel.app',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+app.use(cors());
 app.use(express.json());
 
 connectDB();
