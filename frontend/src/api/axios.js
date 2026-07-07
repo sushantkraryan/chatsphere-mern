@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://chatsphere-mern.onrender.com/api",
+  baseURL: "https://chatsphere-mern.onrender.com",
 });
 
 api.interceptors.request.use((config) => {
